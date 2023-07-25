@@ -26,7 +26,7 @@ pipeline {
 
     stage('CODE ANALYSIS') {
         steps {
-          echo "sonar"
+          echo 'sonar'
           //sh 'sonar-scanner -Dsonar.host.url=http://172.31.86.8:9000 -Dsonar.login=admin -Dsonar.password=admin321 -Dsonar.projectKey=cart'
            }
         }
