@@ -13,7 +13,7 @@ pipeline {
 
      stage('BUILD') {
         steps {
-           echo 'mvn package'
+           sh 'npm install'
             }
       }
 
