@@ -20,6 +20,7 @@ pipeline {
     stage('UNIT TESTS') {
         steps {
            echo 'UNIT TEST'
+           //sh 'npm test'
             }
         }
 
