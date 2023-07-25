@@ -37,6 +37,12 @@ pipeline {
           }
        }
     stage('PUBLISH A ARTIFACT WITH VERSION') {
+
+    when{
+       expression {
+          TAG_NAME ==~ ".*"
+          }
+        }
        steps {
           echo 'PUBLISH A ARTIFACT WITH VERSION'
           }
